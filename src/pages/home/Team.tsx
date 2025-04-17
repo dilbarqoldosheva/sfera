@@ -6,7 +6,7 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import TeamMemberCard from "@/components/cards/TeamMember"
 import SectionTitle from "@/components/SectionTitle/SectionTitle"
-import {  teacher, TeamMemberCardProps } from "@/types/cards"
+import {   TeamMemberCardProps } from "@/types/cards"
 
 const Team = ({ teacherData }: { teacherData: TeamMemberCardProps[] }) => {
     if (!teacherData || teacherData.length === 0) {
