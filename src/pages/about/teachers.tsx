@@ -1,9 +1,9 @@
 import SectionTitle from "@/components/SectionTitle/SectionTitle"
-// import Image from "next/image"
+import Image from "next/image"
 import colors from "@/lib/colors"
-// import { URL } from "@/helpers/api"
+import { URL } from "@/helpers/api"
 
-export default function Teacher() {
+export default function Teacher({course}:any) {
 
 
     return (
@@ -11,7 +11,7 @@ export default function Teacher() {
             <div className="mb-10">
                 <SectionTitle title="FRONTEND O'QITUVCHILARI" />
             </div>
-            {/* <div className="flex  flex-col ">
+            <div className="flex  flex-col ">
                 <div style={{ backgroundColor: colors.green }}>
                     <div className="container mx-auto px-4">
                         <div className="flex flex-col gap-40 md:flex-row ">
@@ -42,7 +42,7 @@ export default function Teacher() {
                         ))}
                     </div>
                 </div>
-            </div> */}
+            </div>
         </section>
     )
 }

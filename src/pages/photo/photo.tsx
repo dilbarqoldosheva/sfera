@@ -10,8 +10,7 @@ import { photo } from "@/types/cards"
 
 
 export default function PhotoSplide({ photosData }: any) {
-    console.log(photosData);
-
+    const safePhotos = Array.isArray(photosData) ? photosData : []
     const [currentIndex, setCurrentIndex] = useState(0)
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
     const carouselRef = useRef<HTMLDivElement>(null)
@@ -33,7 +32,7 @@ export default function PhotoSplide({ photosData }: any) {
         return () => window.removeEventListener("resize", handleResize)
     }, [])
 
-    const totalSlides = photosData.length - itemsToShow + 1
+    const totalSlides = Math.max(safePhotos.length - itemsToShow + 1, 1)
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides)
@@ -45,7 +44,8 @@ export default function PhotoSplide({ photosData }: any) {
         }, 5000)
 
         return () => clearTimeout(timer)
-    }, [currentIndex])
+    }, [currentIndex, totalSlides])
+
 
     return (
         <section className="w-full px-4 sm:px-6 lg:px-8">
