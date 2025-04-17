@@ -12,7 +12,7 @@ import { URL } from "@/helpers/api"
 //   twitter: FaTwitter,
 //   telegram: FaTelegram,
 // }
-export default function TeamMemberCard({ name, level, photo, socialLinks }: TeamMemberCardProps) {
+export default function TeamMemberCard({ name, level, photo,  }: TeamMemberCardProps) {
   return (
     <div className="rounded-2xl overflow-hidden max-w-sm w-full" style={{color:colors.white, border: `2px solid ${colors.green}`}}>
       <div className="aspect-square relative">
