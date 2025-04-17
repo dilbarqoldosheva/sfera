@@ -58,7 +58,7 @@ export default function PhotoSplide({ photosData }: any) {
                         className="flex gap-7 rounded-2xl transition-transform duration-500 ease-in-out"
                         style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}
                     >
-                        {photosData.map((photo: photo, index: number) => (
+                        {safePhotos.map((photo: photo, index: number) => (
                             <div
                                 key={photo.id}
                                 className="relative px-2"
@@ -95,6 +95,7 @@ export default function PhotoSplide({ photosData }: any) {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
         </section>
