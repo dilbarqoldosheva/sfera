@@ -1,7 +1,7 @@
 import SectionTitle from "@/components/SectionTitle/SectionTitle"
-import Image from "next/image"
+// import Image from "next/image"
 import colors from "@/lib/colors"
-import { URL } from "@/helpers/api"
+// import { URL } from "@/helpers/api"
 
 export default function Teacher() {
 
