@@ -1,7 +1,7 @@
 import colors from '@/lib/colors' 
 
 
-export default function CourseInfoSection({ course }: { course: any }) {
+export default function CourseInfoSection( ) {
   // const courseInfo = {
   //   totalLessons: 72,
   //   format: "Onlayn",
