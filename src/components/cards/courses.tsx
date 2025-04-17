@@ -87,7 +87,7 @@ export default function BackendCard({
             <div className="flex justify-between">
               <span style={{ color: colors.grayText }}>Narxi:</span>
               <span className="font-medium" style={{ color: colors.green }}>
-                {price} ming so'm
+                {price} ming so&apos;m
               </span>
             </div>
           </div>
