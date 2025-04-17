@@ -1,15 +1,8 @@
 import colors from '@/lib/colors' 
 
 
-export default function CourseInfoSection( { course }: { course: any }) {
-  console.log(course);
-  
-  // const courseInfo = {
-  //   totalLessons: 72,
-  //   format: "Onlayn",
-  //   duration: "6 oy",
-  //   lessonDuration: "2 soat",
-  // }
+export default function CourseInfoSection({ course }: { course: any }) {
+  if (!course) return null; // yoki <p>Ma'lumot topilmadi</p>
 
   return (
     <div style={{ backgroundColor: colors.green, color: colors.white }} className="w-full p-6">
@@ -20,25 +13,25 @@ export default function CourseInfoSection( { course }: { course: any }) {
         >
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Barcha darslar miqdori:</h3>
-            <p className="text-2xl font-bold">{course.lesson_count} dars</p>
+            <p className="text-2xl font-bold">{course.lesson_count ?? 0} dars</p>
           </div>
 
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Ta&apos;lim formati:</h3>
-            <p className="text-2xl font-bold">{course.format}</p>
+            <p className="text-2xl font-bold">{course.format ?? 'Noma’lum'}</p>
           </div>
 
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Kurs davomiyligi:</h3>
-            <p className="text-2xl font-bold">{course.course_duration}</p>
+            <p className="text-2xl font-bold">{course.course_duration ?? 'Noma’lum'}</p>
           </div>
 
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Dars davomiyligi:</h3>
-            <p className="text-2xl font-bold">{course.lesson_duration}</p>
+            <p className="text-2xl font-bold">{course.lesson_duration ?? 'Noma’lum'}</p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
