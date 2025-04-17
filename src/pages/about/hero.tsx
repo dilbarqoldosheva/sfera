@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import colors from "@/lib/colors"
 import { Course } from '@/types/cards';
 
-const Hero = ({ course }: { course: Course }) => {
+const Hero = ({ course }: { course: any }) => {
     
     return (
         <div>
