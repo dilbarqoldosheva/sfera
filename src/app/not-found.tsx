@@ -6,7 +6,7 @@ import HoveredButton from "@/components/buttons/hovered-button";
 export default function NotFound() {
     return (
         <div className="relative flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden z-1">
-            <GridShape/>
+            <GridShape />
             <div className="mx-auto w-full max-w-[242px] text-center sm:max-w-[472px]">
                 <h1 className="mb-8 font-bold text-gray-800 text-title-md xl:text-title-2xl">
                     ERROR
@@ -23,7 +23,7 @@ export default function NotFound() {
                     We can’t seem to find the page you are looking for!
                 </p>
 
-                <HoveredButton name={"Back to Home Page"} link={"/"}/>
+                <HoveredButton name={"Back to Home Page"} link={"/"} />
             </div>
         </div>
     );
