@@ -8,8 +8,10 @@ import TeamMemberCard from "@/components/cards/TeamMember"
 import SectionTitle from "@/components/SectionTitle/SectionTitle"
 import {  teacher, TeamMemberCardProps } from "@/types/cards"
 
-
-const Team = ({ teacherData }: teacher) => {
+const Team = ({ teacherData }: { teacherData: TeamMemberCardProps[] }) => {
+    if (!teacherData || teacherData.length === 0) {
+        return <div>Loading...</div>; // Or display an appropriate fallback message
+    }
 
     return (
         <section className="w-full px-4 sm:px-6 lg:px-8">
@@ -59,7 +61,8 @@ const Team = ({ teacherData }: teacher) => {
                 `}</style>
             </div>
         </section>
-    )
-}
+    );
+};
+
 
 export default Team
