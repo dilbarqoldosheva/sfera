@@ -2,7 +2,7 @@ import Image from 'next/image'
 import HoveredButton from "@/components/buttons/hovered-button";
 import { cn } from "@/lib/utils";
 import colors from "@/lib/colors"
-import { Course } from '@/types/cards';
+// import { Course } from '@/types/cards';
 
 const Hero = ({ course }: { course: any }) => {
     
