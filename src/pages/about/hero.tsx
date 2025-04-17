@@ -19,8 +19,8 @@ const Hero = ({ course }: { course: any }) => {
                 />
                 <div className={'absolute top-1/2 -translate-y-1/2 flex w-full'}>
                     <div className={'mx-auto space-x-4 text-center'}>
-                        <h1 className={cn("uppercase  text-6xl font-bold tracking-wide mb-5")} style={{ color: colors.white }}>{course.name}</h1>
-                        <p className={cn("uppercase text-2xl font-semibold mb-5")} style={{ color: colors.white }}>{course.subtitle}</p>
+                        <h1 className={cn("uppercase  text-6xl font-bold tracking-wide mb-5")} style={{ color: colors.white }}>{course?.name}</h1>
+                        <p className={cn("uppercase text-2xl font-semibold mb-5")} style={{ color: colors.white }}>{course?.subtitle}</p>
                         <HoveredButton
                             className={'py-4   hover:border-white hover:bg-transparent'}
                             name={'BEPUL BIRINCHI DARS'}
