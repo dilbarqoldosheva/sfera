@@ -1,6 +1,6 @@
 import { ReadCourses } from "@/helpers/api";
 import Hero from "@/pages/about/hero";
-import CourseInfoSection from "@/pages/about/CourseInfo";
+// import CourseInfoSection from "@/pages/about/CourseInfo";
 import Info from "@/pages/courses/info";
 import ForWhomSection from "@/pages/about/forWhom";
 import Register from "@/pages/about/info";
