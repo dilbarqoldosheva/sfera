@@ -29,7 +29,7 @@ export default async function CoursePage({ params }: any) {
 
         <div className="">
             <Hero course={courseData} />
-            <CourseInfoSection course={courseData} />
+            <CourseInfoSection  />
             <Info />
             <Teachers course={courseData}/>
             <FAQSection />
