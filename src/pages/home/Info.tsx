@@ -21,7 +21,7 @@ export const infoCards = [
             "Markazimizda zamonaviy sohalarda bo‘sh ish o‘rinlarini topishga yordam beruvchi bo‘limi mavjud.",
     },
     {
-        image: "/home/info3.png",
+        image: "/home/info.png",
         title: "Sertifikatga ega bo‘lishingiz mumkin!",
         description:
             "Kursni muvaffaqiyatli tamomlagan o‘quvchilar “Sfera Academiyasi” ning diplom va sertifikatiga ega bo‘ladi.",

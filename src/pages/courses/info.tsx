@@ -15,7 +15,7 @@ export const infoCards = [
         title: "Frontend dasturchilar foydalanuvchi interfeysini ishlab chiqadilar va dizaynni interaktiv elementlarga aylantiradilar. Ular ",
     },
     {
-        image: "/home/info3.png",
+        image: "/home/info.png",
         title: "Frontend dasturchining asosiy vazifasi — foydalanuvchi uchun qulay, tezkor va jozibali interfeys yaratishdir. ",
     },
 ];

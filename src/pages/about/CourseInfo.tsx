@@ -1,7 +1,9 @@
 import colors from '@/lib/colors' 
 
 
-export default function CourseInfoSection( ) {
+export default function CourseInfoSection( { course }: { course: any }) {
+  console.log(course);
+  
   // const courseInfo = {
   //   totalLessons: 72,
   //   format: "Onlayn",
@@ -16,12 +18,12 @@ export default function CourseInfoSection( ) {
           className="grid grid-cols-1 md:grid-cols-4 gap-4 divide-y md:divide-y-0 md:divide-x"
           style={{ borderColor: colors.green }}
         >
-          {/* <div className="px-4 py-2">
+          <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Barcha darslar miqdori:</h3>
             <p className="text-2xl font-bold">{course.lesson_count} dars</p>
-          </div> */}
+          </div>
 
-          {/* <div className="px-4 py-2">
+          <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Ta&apos;lim formati:</h3>
             <p className="text-2xl font-bold">{course.format}</p>
           </div>
@@ -34,7 +36,7 @@ export default function CourseInfoSection( ) {
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Dars davomiyligi:</h3>
             <p className="text-2xl font-bold">{course.lesson_duration}</p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
