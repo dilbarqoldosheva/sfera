@@ -6,12 +6,12 @@ import colors from "@/lib/colors"
 import { URL } from "@/helpers/api"
 
 
-const iconMap = {
-  instagram: FaInstagram,
-  facebook: FaFacebook,
-  twitter: FaTwitter,
-  telegram: FaTelegram,
-}
+// const iconMap = {
+//   instagram: FaInstagram,
+//   facebook: FaFacebook,
+//   twitter: FaTwitter,
+//   telegram: FaTelegram,
+// }
 export default function TeamMemberCard({ name, level, photo, socialLinks }: TeamMemberCardProps) {
   return (
     <div className="rounded-2xl overflow-hidden max-w-sm w-full" style={{color:colors.white, border: `2px solid ${colors.green}`}}>

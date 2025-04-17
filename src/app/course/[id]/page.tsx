@@ -17,7 +17,6 @@ async function getcourses() {
 } 
 
 const coursesData = await getcourses();
-console.log(coursesData);
 export default async function CoursePage({ params }: any) {
     const { id } = params;
     const res = await fetch(`${ReadCourses}/${id}`, {
@@ -25,13 +24,7 @@ export default async function CoursePage({ params }: any) {
     });
     const courseData = await res.json();
 
-    async function getcourses() {
-        const res = await fetch(`${ReadCourses}`, {
-            cache: 'no-store',
-        });
 
-        return res.json();
-    }
     return (
 
         <div className="">
