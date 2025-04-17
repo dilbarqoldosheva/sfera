@@ -32,16 +32,17 @@ const Students = ({ studentsData }: Student) => {
                         1280: { slidesPerView: 2 },
                     }}
                 >
-                    {studentsData.map((student: BestStudent) => (
-                        <SwiperSlide key={student.id}>
-                            <StudentTestimonialCard
-                                full_name={student.full_name}
-                                course_name={student.course_name}
-                                description={student.description}
-                                photo={student.photo}
-                            />
-                        </SwiperSlide>
-                    ))}
+                    {Array.isArray(studentsData) && studentsData.map((student: BestStudent) => (
+    <SwiperSlide key={student.id}>
+        <StudentTestimonialCard
+            full_name={student.full_name}
+            course_name={student.course_name}
+            description={student.description}
+            photo={student.photo}
+        />
+    </SwiperSlide>
+))}
+
                 </Swiper>
                 <style jsx global>{`
                     .swiper-button-next,
