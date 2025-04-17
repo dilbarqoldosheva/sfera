@@ -21,7 +21,7 @@ export default function CourseInfoSection({ course }: { course: any }) {
             <p className="text-2xl font-bold">{course.lesson_count} dars</p>
           </div> */}
 
-          <div className="px-4 py-2">
+          {/* <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Ta&apos;lim formati:</h3>
             <p className="text-2xl font-bold">{course.format}</p>
           </div>
@@ -34,7 +34,7 @@ export default function CourseInfoSection({ course }: { course: any }) {
           <div className="px-4 py-2">
             <h3 className="text-sm font-medium">Dars davomiyligi:</h3>
             <p className="text-2xl font-bold">{course.lesson_duration}</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
