@@ -31,7 +31,7 @@ export default async function CoursePage({ params }: any) {
             <Hero course={courseData} />
             <CourseInfoSection />
             <Info />
-            <Teachers course={courseData} />
+            <Teachers />
             <FAQSection />
             <Register coursesData={coursesData}/>
             <ForWhomSection />
