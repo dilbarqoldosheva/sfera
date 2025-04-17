@@ -2,12 +2,12 @@ import colors from '@/lib/colors'
 import { Course } from '@/types/cards'
 
 export default function CourseInfoSection({ course }: { course: Course }) {
-  const courseInfo = {
-    totalLessons: 72,
-    format: "Onlayn",
-    duration: "6 oy",
-    lessonDuration: "2 soat",
-  }
+  // const courseInfo = {
+  //   totalLessons: 72,
+  //   format: "Onlayn",
+  //   duration: "6 oy",
+  //   lessonDuration: "2 soat",
+  // }
 
   return (
     <div style={{ backgroundColor: colors.green, color: colors.white }} className="w-full p-6">

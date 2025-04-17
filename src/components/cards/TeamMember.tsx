@@ -1,7 +1,7 @@
 import Image from "next/image"
-import SocialIconLink from "@/components/SocialIconLink/SocialIconLink"
+// import SocialIconLink from "@/components/SocialIconLink/SocialIconLink"
 import { TeamMemberCardProps } from "@/types/cards"
-import { FaInstagram, FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa'
+// import { FaInstagram, FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa'
 import colors from "@/lib/colors"
 import { URL } from "@/helpers/api"
 
