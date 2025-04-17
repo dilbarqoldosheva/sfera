@@ -6,7 +6,7 @@ export const useNavLinks = () => {
     const {lang} = useTranslate()
     const navItems: INavItems[] = [
         {id: 'home', name: lang('home'), link: '/'},
-        {id: 'portfolio', name: lang('portfolio'), link: '/portfolio'},
+        {id: 'portfolio', name: lang('portfolio'), link: '/photos'},
         {id: 'courses', name: lang('courses'), link: '/courses'},
         {id: 'about', name: lang('visits'), link: '/visits'},
     ]

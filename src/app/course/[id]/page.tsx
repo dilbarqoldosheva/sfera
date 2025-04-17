@@ -6,6 +6,7 @@ import ForWhomSection from "@/pages/about/forWhom";
 import Register from "@/pages/about/info";
 import FAQSection from "@/pages/about/accordion";
 import Teachers from "@/pages/about/teachers";
+import CourseInfoSection from "@/pages/about/CourseInfo";
 
 async function getcourses() {
     const res = await fetch(`${ReadCourses}`, {
@@ -29,7 +30,7 @@ export default async function CoursePage({ params }: any) {
 
         <div className="">
             <Hero course={courseData} />
-            {/* <CourseInfoSection  /> */}
+            <CourseInfoSection course={courseData}/>
             <Info />
             <Teachers course={courseData}/>
             <FAQSection />

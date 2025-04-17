@@ -11,8 +11,8 @@ const About = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div
-                        className="m-5 border-b md:border-b-0 md:border-r"
-                        style={{ borderColor: colors.green }}
+                        className="m-5 "
+                        
                     >
                         <CountCard
                             img="/home/count.png"
@@ -22,8 +22,8 @@ const About = () => {
                         />
                     </div>
                     <div
-                        className="m-5 border-b md:border-b-0"
-                        style={{ borderColor: colors.green }}
+                        className="m-5 "
+                       
                     >
                         <CountCard
                             img="/home/courses2.png"
@@ -33,8 +33,8 @@ const About = () => {
                         />
                     </div>
                     <div
-                        className="m-5 md:border-r"
-                        style={{ borderColor: colors.green }}
+                        className="m-5 "
+                       
                     >
                         <CountCard
                             img="/home/courses1.png"
@@ -43,7 +43,7 @@ const About = () => {
                             suffix=" YIL"
                         />
                     </div>
-                    <div className="m-5" style={{ borderColor: colors.green }}>
+                    <div className="m-5" >
                         <CountCard
                             img="/home/courses.png"
                             title="Jamoamiz a'zolari"

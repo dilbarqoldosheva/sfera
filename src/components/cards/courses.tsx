@@ -49,60 +49,66 @@ export default function BackendCard({
 }: BackendCardProps) {
   return (
     <div
-      className="rounded-lg p-6 w-full"
-      style={{ backgroundColor: colors.white, border: `1px solid ${colors.green}` }}
-    >
-      <div className="flex flex-col md:flex-row w-full gap-10">
-        <div className="flex-1">
-          <h2 className="text-xl font-medium mb-5" style={{ color: colors.green }}>
-            {courseTitle}
-          </h2>
-          <div className="relative w-full max-w-[300px] h-auto aspect-[4/3] overflow-hidden rounded-md">
-            <Image
-              src={`${URL}${image}`}
-              alt={courseTitle}
-              fill
-              className="object-contain rounded-2xl"
-              sizes="(max-width: 768px) 100vw, 300px"
-            />
-          </div>
-        </div>
+    className="rounded-lg px-6 pb-3 w-full"
+    style={{ backgroundColor: colors.white, border: `1px solid ${colors.green}` }}
+  >
+    {/* Course Title – Tepada alohida */}
+    <h2 className="text-xl font-medium text-center md:text-left" style={{ color: colors.green }}>
+      {courseTitle}
+    </h2>
 
-        <div className="flex-1 flex flex-col justify-between">
-          <div className="space-y-3">
-            <div className="flex justify-between">
+    {/* Qolgan qismlar flex */}
+    <div className="flex flex-col md:flex-row w-full gap-10 items-start">
+      {/* Chap taraf – Image */}
+      <div className="relative w-full max-w-[300px] h-auto aspect-[4/3] overflow-hidden rounded-md">
+        <Image
+          src={`${URL}${image}`}
+          alt={courseTitle}
+          fill
+          className="object-contain rounded-2xl"
+          sizes="(max-width: 768px) 100vw, 300px"
+        />
+      </div>
+
+      {/* O'ng taraf – Malumotlar */}
+      <div className="flex flex-col justify-between h-full flex-1">
+        <div className="flex flex-col gap-5">
+          <div className="flex justify-between gap-4">
+            <div className="flex flex-col">
               <span style={{ color: colors.grayText }}>Yangi guruh:</span>
               <span className="font-medium" style={{ color: colors.green }}>
                 {start_date}
               </span>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex flex-col">
               <span style={{ color: colors.grayText }}>Davomiyligi:</span>
               <span className="font-medium" style={{ color: colors.green }}>
                 {duration}
               </span>
             </div>
-
-            <div className="flex justify-between">
-              <span style={{ color: colors.grayText }}>Narxi:</span>
-              <span className="font-medium" style={{ color: colors.green }}>
-                {price} ming so&apos;m
-              </span>
-            </div>
           </div>
 
-          <div className="flex items-center gap-2 mt-4">
-            <Avatar>
-              <AvatarImage src={`${URL}${photo}`} alt={instructorName} />
-              <AvatarFallback>{instructorName[0]}</AvatarFallback>
-            </Avatar>
-            <span className="font-medium" style={{ color: colors.black }}>
-              {instructorName}
+          <div className="flex flex-col">
+            <span style={{ color: colors.grayText }}>Narxi:</span>
+            <span className="font-medium" style={{ color: colors.green }}>
+              {price} ming so&apos;m
             </span>
           </div>
         </div>
+
+        {/* Instructor – Pastda alohida chiqadi */}
+        <div className="flex items-center gap-2 mt-10">
+          <Avatar>
+            <AvatarImage src={`${URL}${photo}`} alt={instructorName} />
+            <AvatarFallback>{instructorName[0]}</AvatarFallback>
+          </Avatar>
+          <span className="font-medium" style={{ color: colors.black }}>
+            {instructorName}
+          </span>
+        </div>
       </div>
     </div>
+  </div>
   )
 }

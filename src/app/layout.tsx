@@ -17,7 +17,16 @@ import ReactQueryLayout from "@/layout/query-layout";
 // scroll to top btn
 import ScrollToTop from "@/components/scroll/scroll-to-top";
 import Footer from "@/components/footer/footer";
-import {defaultMetadata} from "@/lib/seo";
+import { defaultMetadata } from "@/lib/seo";
+
+// ✅ Import font
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    display: "swap",
+});
 
 export const metadata: Metadata = {
     ...defaultMetadata,
@@ -26,7 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
-            <body className="antialiased">
+            <body className={`${raleway.className} antialiased`}>
                 <SmoothScrollProvider>
                     <ReactQueryLayout>
                         <MainLayout>
