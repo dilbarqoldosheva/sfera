@@ -6,13 +6,13 @@ import { URL } from "@/helpers/api"
 export default function Teacher({ course }: any) {
     // course yoki course.teachers mavjudligini tekshirish
     if (!course || !course.teachers || course.teachers.length === 0) {
-        return <p>No teachers found</p>; // Agar o'qituvchilar bo'lmasa, xabar ko'rsatish
+        return <p className="text-center">No teachers found</p>; // Agar o'qituvchilar bo'lmasa, xabar ko'rsatish
     }
 
     return (
         <section className="py-10" style={{ color: colors.green }}>
             <div className="mb-10">
-                <SectionTitle title="FRONTEND O'QITUVCHILARI" />
+                <SectionTitle title={`${course.name} o’qituvchilari`} />
             </div>
             <div className="flex flex-col">
                 <div style={{ backgroundColor: colors.green }}>
