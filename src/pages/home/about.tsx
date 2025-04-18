@@ -1,6 +1,6 @@
 import { CountCard } from "@/components/cards/countCard";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
-import colors from "@/lib/colors";
+
 
 const About = () => {
     return (
