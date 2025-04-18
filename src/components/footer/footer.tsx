@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl pb-5">Foydali havolalar</h3>
             <div className="flex flex-col gap-2">
-              <Link href=""><p className={`text-[${colors.grayText}] text-base hover:text-[${colors.green}]`}>Biz haqimizda</p></Link>
+              <Link href="/"><p className={`text-[${colors.grayText}] text-base hover:text-[${colors.green}]`}>Biz haqimizda</p></Link>
               <Link href="/visits"><p className={`text-[${colors.grayText}] text-base hover:text-[${colors.green}]`}>Tashriflar</p></Link>
               <Link href="/"><p className={`text-[${colors.grayText}] text-base hover:text-[${colors.green}]`}>Portfolio</p></Link>
               <Link href="/courses"><p className={`text-[${colors.grayText}] text-base hover:text-[${colors.green}]`}>Kurslar</p></Link>
@@ -71,14 +71,15 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-5 mt-10 text-center">
-          <Image
-            src="/sfera-logo.png"
-            alt="SFERA Academy"
-            className={cn("scale-[115%]")}
-            width={130}
-            height={40}
-          />
-
+          <Link href="/">
+            <Image
+              src="/sfera-logo.png"
+              alt="SFERA Academy"
+              className={cn("scale-[115%]")}
+              width={130}
+              height={40}
+            />
+          </Link>
           <p className={`text-[${colors.grayText}] text-base`}>Sfera Academy - zamonaviy kasblar akademiyasi!</p>
 
           <div className="flex justify-center space-x-5">
